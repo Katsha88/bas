@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "480014792947",
+    "firebase_url": "https://baseerah-app.firebaseio.com",
+    "project_id": "baseerah-app",
+    "storage_bucket": "baseerah-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480014792947:android:3adaee2527b52132de9f86",
+        "android_client_info": {
+          "package_name": "my.edu.baseerah.baseerah_videos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480014792947-7rk1gs7kvnd42evg3b8ng75dqte877gj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "my.edu.baseerah.baseerah_videos",
+            "certificate_hash": "ab96e5aa29f72baf3bd503384cefa78f84686c31"
+          }
+        },
+        {
+          "client_id": "480014792947-p2cam4esq0uohsjao6i2nmhq5p82lgjr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALhDA4iDkddqOhIm6aQh4jnVLjd5j0tBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480014792947-p2cam4esq0uohsjao6i2nmhq5p82lgjr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
