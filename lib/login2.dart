@@ -5,13 +5,23 @@ import 'FirstScreen.dart';
 import 'home.dart';
 import 'gridview_demo.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'after_login.dart';
+import 'after_login.dart';
+import 'globals.dart' as globals;
 
 class LoginPage2 extends StatefulWidget {
+  final String value;
+
+  const LoginPage2({Key key, this.value}) : super(key: key);
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage2> {
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +38,7 @@ class _LoginPageState extends State<LoginPage2> {
                 width: 300,
               ),
               SizedBox(height: 1),
-              _signInButton(),
+              signInButton(),
               SizedBox(height: 1),
               _signOutButton(),
 
@@ -58,15 +68,23 @@ class _LoginPageState extends State<LoginPage2> {
     );
   }
 
-  Widget _signInButton() {
+  Widget signInButton() {
+
+
     return OutlineButton(
       splashColor: Colors.grey,
       onPressed: () {
         signInWithGoogle().then((FirebaseUser user) { print(user);
+        globals.user1=user.toString();
         if (user!= null) {
+          var route = new MaterialPageRoute(
+            builder: (BuildContext context) =>
+            new LoginAfter(),
+          );
+          Navigator.of(context).push(route);
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => GridViewDemo()),
+            MaterialPageRoute(builder: (context) => new LoginAfter()),
           );
         }
         }
