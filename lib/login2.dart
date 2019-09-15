@@ -4,6 +4,7 @@ import 'sign_in.dart';
 import 'FirstScreen.dart';
 import 'home.dart';
 import 'gridview_demo.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginPage2 extends StatefulWidget {
   @override
@@ -61,15 +62,18 @@ class _LoginPageState extends State<LoginPage2> {
     return OutlineButton(
       splashColor: Colors.grey,
       onPressed: () {
-        signInWithGoogle().whenComplete(() {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) {
-                return GridViewDemo();
-              },
-            ),
+        signInWithGoogle().then((FirebaseUser user) { print(user);
+        if (user!= null) {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => GridViewDemo()),
           );
-        });
+        }
+        }
+        )
+            .catchError((e) => print(e));
+
+
       },
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       highlightElevation: 0,
