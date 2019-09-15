@@ -35,7 +35,7 @@ class _LoginPageState extends State<LoginPage2> {
                   padding: EdgeInsets.all(10),
                   child: Center(
                     child: new Text(
-                      "Trusted By By By: \nBaseerah Intenational School",
+                      "Trusted By: \nBaseerah Intenational School",
                       textAlign: TextAlign.center,
                       style:
                           TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
