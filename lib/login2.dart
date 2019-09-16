@@ -75,7 +75,7 @@ class _LoginPageState extends State<LoginPage2> {
       splashColor: Colors.grey,
       onPressed: () {
         signInWithGoogle().then((FirebaseUser user) { print(user);
-        globals.user1=user.toString();
+        globals.user1=user.displayName.toString();
         if (user!= null) {
           var route = new MaterialPageRoute(
             builder: (BuildContext context) =>
