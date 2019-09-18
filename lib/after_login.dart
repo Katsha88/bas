@@ -26,134 +26,289 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
               Padding(
                   padding: EdgeInsets.all(2),
                   child: Container(
-                    padding: const EdgeInsets.all(20),
-                    child: const Text(
-                      'My Profile',
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    ),
-                    color: Colors.teal[100],
-                    alignment: Alignment(0, 0),
-                  )),
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/student.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Profile",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
               Padding(
                   padding: EdgeInsets.all(2),
                   child: Container(
-                    padding: const EdgeInsets.all(20),
-                    child: const Text(
-                      'My Calender',
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    ),
-                    color: Colors.teal[100],
-                    alignment: Alignment(0, 0),
-                  )),
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/schedule.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Calender",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
               Padding(
                   padding: EdgeInsets.all(2),
                   child: Container(
-                    padding: const EdgeInsets.all(20),
-                    child: const Text(
-                      'My Inbox',
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    ),
-                    color: Colors.teal[100],
-                    alignment: Alignment(0, 0),
-                  )),
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/question.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Messages",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
               Padding(
                   padding: EdgeInsets.all(2),
                   child: Container(
-                    padding: const EdgeInsets.all(20),
-                    child: const Text(
-                      'Complain',
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    ),
-                    color: Colors.teal[100],
-                    alignment: Alignment(0, 0),
-                  )),
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/professor.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Teachers",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
               Padding(
                   padding: EdgeInsets.all(2),
                   child: Container(
-                    padding: const EdgeInsets.all(20),
-                    child: const Text(
-                      'Googl Class',
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    ),
-                    color: Colors.teal[100],
-                    alignment: Alignment(0, 0),
-                  )),
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/calculation.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Homework",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
               Padding(
                   padding: EdgeInsets.all(2),
                   child: Container(
-                    padding: const EdgeInsets.all(20),
-                    child: const Text(
-                      'Student Behaviour ',
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    ),
-                    color: Colors.teal[100],
-                    alignment: Alignment(0, 0),
-                  )),
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/presentation.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Courses",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
               Padding(
                   padding: EdgeInsets.all(2),
                   child: Container(
-                    padding: const EdgeInsets.all(20),
-                    child: const Text(
-                      "Student's Leave",
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    ),
-                    color: Colors.teal[100],
-                    alignment: Alignment(0, 0),
-                  )),
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/diploma.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "ReportCard",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
               Padding(
                   padding: EdgeInsets.all(2),
                   child: Container(
-                    padding: const EdgeInsets.all(20),
-                    child: const Text(
-                      'Outstanding',
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    ),
-                    color: Colors.teal[100],
-                    alignment: Alignment(0, 0),
-                  )),
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/books.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Library",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
               Padding(
                   padding: EdgeInsets.all(2),
                   child: Container(
-                    padding: const EdgeInsets.all(20),
-                    child: const Text(
-                      'Activites',
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    ),
-                    color: Colors.teal[100],
-                    alignment: Alignment(0, 0),
-                  )),
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/student.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Profile",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
               Padding(
                   padding: EdgeInsets.all(2),
                   child: Container(
-                    padding: const EdgeInsets.all(20),
-                    child: const Text(
-                      'Competition',
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    ),
-                    color: Colors.teal[100],
-                    alignment: Alignment(0, 0),
-                  )),
-
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/student.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Profile",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
+              Padding(
+                  padding: EdgeInsets.all(2),
+                  child: Container(
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/student.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Profile",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
+              Padding(
+                  padding: EdgeInsets.all(2),
+                  child: Container(
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/student.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Profile",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
+              Padding(
+                  padding: EdgeInsets.all(2),
+                  child: Container(
+                      color: Colors.teal[100],
+                      padding: const EdgeInsets.all(20),
+                      child: Column(children: <Widget>[
+                        Expanded(
+                            flex: 3,
+                            child: Image.asset(
+                              "assets/images/student.png",
+                            )),
+                        Container(
+                          color: Colors.white70,
+                          child: const Text(
+                            "Profile",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ]))),
             ],
           )),
     );
