@@ -257,7 +257,7 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
                         Container(
                           color: Colors.white70,
                           child: const Text(
-                            "Feess",
+                            "Fees",
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
