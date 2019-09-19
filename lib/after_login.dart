@@ -125,7 +125,7 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
                         Container(
                           color: Colors.white70,
                           child: const Text(
-                            "Homework",
+                            "HW",
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
@@ -169,7 +169,7 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
                         Container(
                           color: Colors.white70,
                           child: const Text(
-                            "ReportCard",
+                            "Reports",
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
@@ -208,12 +208,12 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
                         Expanded(
                             flex: 3,
                             child: Image.asset(
-                              "assets/images/student.png",
+                              "assets/images/gymnastics.png",
                             )),
                         Container(
                           color: Colors.white70,
                           child: const Text(
-                            "Profile",
+                            "Sport",
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
@@ -230,12 +230,12 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
                         Expanded(
                             flex: 3,
                             child: Image.asset(
-                              "assets/images/student.png",
+                              "assets/images/medical-checkup.png",
                             )),
                         Container(
                           color: Colors.white70,
                           child: const Text(
-                            "Profile",
+                            "Clinic",
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
@@ -252,12 +252,12 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
                         Expanded(
                             flex: 3,
                             child: Image.asset(
-                              "assets/images/student.png",
+                              "assets/images/coins.png",
                             )),
                         Container(
                           color: Colors.white70,
                           child: const Text(
-                            "Profile",
+                            "Fees",
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
@@ -274,12 +274,12 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
                         Expanded(
                             flex: 3,
                             child: Image.asset(
-                              "assets/images/student.png",
+                              "assets/images/behavior.png",
                             )),
                         Container(
                           color: Colors.white70,
                           child: const Text(
-                            "Profile",
+                            "Behavior",
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
@@ -287,28 +287,7 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
                           ),
                         )
                       ]))),
-              Padding(
-                  padding: EdgeInsets.all(2),
-                  child: Container(
-                      color: Colors.teal[100],
-                      padding: const EdgeInsets.all(20),
-                      child: Column(children: <Widget>[
-                        Expanded(
-                            flex: 3,
-                            child: Image.asset(
-                              "assets/images/student.png",
-                            )),
-                        Container(
-                          color: Colors.white70,
-                          child: const Text(
-                            "Profile",
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        )
-                      ]))),
+
             ],
           )),
     );
