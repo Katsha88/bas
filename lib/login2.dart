@@ -8,6 +8,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'after_login.dart';
 import 'after_login.dart';
 import 'globals.dart' as globals;
+import 'teacherafterlogin.dart';
+import 'parentafterloging.dart';
 
 class LoginPage2 extends StatefulWidget {
   final String value;
@@ -69,6 +71,7 @@ class _LoginPageState extends State<LoginPage2> {
   }
 
   Widget signInButton() {
+    String email1;
 
 
     return OutlineButton(
@@ -76,16 +79,34 @@ class _LoginPageState extends State<LoginPage2> {
       onPressed: () {
         signInWithGoogle().then((FirebaseUser user) { print(user);
         globals.user1=user.displayName.toString();
+        email1 = user.email.toString();
+        bool emailValid = RegExp(r"^[a-zA-Z0-9_.+-]+[.][s]@(baseerah)(\.edu\.my)$").hasMatch(email1);
+        bool emailValid1 = RegExp(r"^[a-zA-Z0-9_.+-]+[.][t]@(baseerah)(\.edu\.my)$").hasMatch(email1);
+        bool emailValid2 = RegExp(r"^[a-zA-Z0-9_.+-]+[.][p]@(baseerah)(\.edu\.my)$").hasMatch(email1);
+        print ("this email is accepted :$emailValid");
         if (user!= null) {
-          var route = new MaterialPageRoute(
-            builder: (BuildContext context) =>
-            new LoginAfter(),
-          );
-          Navigator.of(context).push(route);
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => new LoginAfter()),
-          );
+          if (emailValid==true) {
+            var route = new MaterialPageRoute(
+              builder: (BuildContext context) =>
+              new LoginAfter(),
+            );
+            Navigator.of(context).push(route);
+
+          }
+          else if(emailValid1==true){
+            var route = new MaterialPageRoute(
+              builder: (BuildContext context) =>
+              new TeacherAfterLogin(),
+            );
+            Navigator.of(context).push(route);
+          }
+          else if(emailValid2==true){
+            var route = new MaterialPageRoute(
+              builder: (BuildContext context) =>
+              new ParentAfterLogin(),
+            );
+            Navigator.of(context).push(route);
+          }
         }
         }
         )

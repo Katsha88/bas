@@ -4,12 +4,12 @@ import 'login2.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'globals.dart' as globals;
 
-class LoginAfter extends StatefulWidget {
+class TeacherAfterLogin extends StatefulWidget {
   @override
-  _LoginAfterState createState() => new _LoginAfterState();
+  _TeacherAfterLogin createState() => new _TeacherAfterLogin();
 }
 
-class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
+class _TeacherAfterLogin extends State<TeacherAfterLogin> with TickerProviderStateMixin {
   TabController tabController;
 
   @override
@@ -18,7 +18,7 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
       length: 2,
       child: new Scaffold(
           appBar: new AppBar(
-            title: new Text("Student's account"),
+            title: new Text("Teacher's account"),
           ),
           body: GridView.count(
             crossAxisCount: 2,
@@ -37,7 +37,7 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
                         Container(
                           color: Colors.white70,
                           child: const Text(
-                            "Profile",
+                            "My Classes",
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
@@ -120,12 +120,12 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
                         Expanded(
                             flex: 3,
                             child: Image.asset(
-                              "assets/images/calculation.png",
+                              "assets/images/headache.png",
                             )),
                         Container(
                           color: Colors.white70,
                           child: const Text(
-                            "HW",
+                            "Attendence",
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
@@ -144,142 +144,11 @@ class _LoginAfterState extends State<LoginAfter> with TickerProviderStateMixin {
                             child: Image.asset(
                               "assets/images/presentation.png",
                             )),
-                        Container(
-                          color: Colors.white70,
-                          child: const Text(
-                            "Courses",
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        )
-                      ]))),
-              Padding(
-                  padding: EdgeInsets.all(2),
-                  child: Container(
-                      color: Colors.teal[100],
-                      padding: const EdgeInsets.all(20),
-                      child: Column(children: <Widget>[
-                        Expanded(
-                            flex: 3,
-                            child: Image.asset(
-                              "assets/images/diploma.png",
-                            )),
-                        Container(
-                          color: Colors.white70,
-                          child: const Text(
-                            "Reports",
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        )
-                      ]))),
-              Padding(
-                  padding: EdgeInsets.all(2),
-                  child: Container(
-                      color: Colors.teal[100],
-                      padding: const EdgeInsets.all(20),
-                      child: Column(children: <Widget>[
-                        Expanded(
-                            flex: 3,
-                            child: Image.asset(
-                              "assets/images/books.png",
-                            )),
+
                         Container(
                           color: Colors.white70,
                           child: const Text(
                             "Library",
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        )
-                      ]))),
-              Padding(
-                  padding: EdgeInsets.all(2),
-                  child: Container(
-                      color: Colors.teal[100],
-                      padding: const EdgeInsets.all(20),
-                      child: Column(children: <Widget>[
-                        Expanded(
-                            flex: 3,
-                            child: Image.asset(
-                              "assets/images/gymnastics.png",
-                            )),
-                        Container(
-                          color: Colors.white70,
-                          child: const Text(
-                            "Sport",
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        )
-                      ]))),
-              Padding(
-                  padding: EdgeInsets.all(2),
-                  child: Container(
-                      color: Colors.teal[100],
-                      padding: const EdgeInsets.all(20),
-                      child: Column(children: <Widget>[
-                        Expanded(
-                            flex: 3,
-                            child: Image.asset(
-                              "assets/images/medical-checkup.png",
-                            )),
-                        Container(
-                          color: Colors.white70,
-                          child: const Text(
-                            "Clinic",
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        )
-                      ]))),
-              Padding(
-                  padding: EdgeInsets.all(2),
-                  child: Container(
-                      color: Colors.teal[100],
-                      padding: const EdgeInsets.all(20),
-                      child: Column(children: <Widget>[
-                        Expanded(
-                            flex: 3,
-                            child: Image.asset(
-                              "assets/images/coins.png",
-                            )),
-                        Container(
-                          color: Colors.white70,
-                          child: const Text(
-                            "Fees",
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        )
-                      ]))),
-              Padding(
-                  padding: EdgeInsets.all(2),
-                  child: Container(
-                      color: Colors.teal[100],
-                      padding: const EdgeInsets.all(20),
-                      child: Column(children: <Widget>[
-                        Expanded(
-                            flex: 3,
-                            child: Image.asset(
-                              "assets/images/behavior.png",
-                            )),
-                        Container(
-                          color: Colors.white70,
-                          child: const Text(
-                            "Behavior",
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,

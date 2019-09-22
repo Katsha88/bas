@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:streaming/lesson_plan.dart';
+
+import 'lesson_plan.dart';
 import 'note_detail.dart';
 import 'dart:async';
 import 'login.dart';
@@ -7,6 +8,7 @@ import 'customicon.dart';
 import 'home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'login2.dart';
+import 'developer.dart';
 void main() => runApp(new MyApp());
 class MyApp extends StatefulWidget {
   @override
@@ -20,6 +22,7 @@ class MyAppState extends State<MyApp> {
     Home(),
     LessonPlan(),
     LoginPage2(),
+    Developer()
   ];
   @override
   Widget build(BuildContext context) {
@@ -33,6 +36,12 @@ class MyAppState extends State<MyApp> {
       home: Scaffold(
         body: _pageOptions[_selectedTab],
         bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor: Colors.deepOrange,
+          unselectedItemColor: Colors.indigo,
+          type: BottomNavigationBarType.fixed,
+
+
+
           currentIndex: _selectedTab,
           onTap: (int index) {
             setState(() {
@@ -42,7 +51,8 @@ class MyAppState extends State<MyApp> {
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
-              title: Text('Home'),
+              title: Text('Home',
+              ),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.category),
@@ -51,6 +61,10 @@ class MyAppState extends State<MyApp> {
             BottomNavigationBarItem(
               icon: Icon(Icons.search),
               title: Text('Login'),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.contact_mail),
+              title: Text('Contact us'),
             ),
           ],
         ),
