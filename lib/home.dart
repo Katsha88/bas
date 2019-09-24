@@ -4,6 +4,7 @@ import 'customicon.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'note_detail.dart';
 import 'dart:async';
+import 'package:carousel_pro/carousel_pro.dart';
 
 
 
@@ -96,8 +97,22 @@ class HomeScreeTopPart extends StatelessWidget {
               ]),
               child: Stack(
                 children: <Widget>[
+              Carousel(
+              images: [
                   Image.asset("assets/images/banner.jpg",
                       fit: BoxFit.cover, width: double.infinity),
+                Image.asset("assets/images/10.jpg",
+                    fit: BoxFit.cover, width: double.infinity),
+                Image.asset("assets/images/11.jpg",
+                    fit: BoxFit.cover, width: double.infinity),
+                Image.asset("assets/images/12.jpg",
+                    fit: BoxFit.cover, width: double.infinity),
+                Image.asset("assets/images/13.jpg",
+                    fit: BoxFit.cover, width: double.infinity),
+                Image.asset("assets/images/14.jpg",
+                    fit: BoxFit.cover, width: double.infinity),
+
+              ]),
                   Container(
                     height: double.infinity,
                     width: double.infinity,
